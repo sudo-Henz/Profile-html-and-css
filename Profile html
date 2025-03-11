@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jhei Soliman - </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About Me</a></li>
+            <li><a href="#" onclick="showSection('client')">Connections</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+<!-- Home Section -->
+<section id="home" class="tab-content active">
+    <div class="content">
+        <h1>Welcome to My Profile</h1>
+        <p>Hi, I'm <span class="highlight">Jhei Soliman</span>, a dreamer aspiring to become a Web Developer✨.</p>
+        
+        <!-- Main Profile Image -->
+        <img src="" 
+             alt="Jhei Soliman" class="profile-img main-profile">
+        
+        <!-- Additional Smaller Profiles -->
+        <div class="extra-profiles">
+            <img src="https://assets.onecompiler.app/43bfefdcr/43bgbhxq2/482829329_1185203926732962_8318226089782095608_n.jpg" alt="Profile 2" class="profile-img small-profile">
+            <img src="https://assets.onecompiler.app/43bfefdcr/43bfefkqg/fb4f78ce739de42e046d24e96b0bf8ce.jpeg" alt="Profile 3" class="profile-img small-profile">
+        </div>
+    </div>
+</section>
+
+    
+ <!-- About Me Section -->
+<section id="about" class="tab-content">
+    <div class="content about-block">
+        <h2>About Me</h2>
+      <p>Hello, I'm Jhieanne Soliman a <span class="highlight">GRADE-11 ICT student</span> at <span class="highlight">IACS Meycauayan</span>, aspiring to become a Web Developer..</p>
+        <div class="about-card">
+          <h3>more about me 😊 </h3>
+            <p>I enjoy going out with my friends to church, and <span class="highlight">leading my fellow teenagers toward faith.</span> As an aspiring P12 leader, I strive to be a guiding light for others, helping them grow spiritually while also working on my own personal growth. I also love being an extrovert, even though it sometimes brings insecurities, but I cherish the opportunity to make more friends.  </p>
+        </div>
+      <div class="about-card">
+            <h3></h3>
+        <p>If you're looking for a <span class="highlight"> true and trustworthy friend</span>, I am that person. <span class="highlight"> value honesty, loyalty, and deep connections with the people around me.</span>that friendships should be built on trust, understanding, and genuine care. Whether it's being there during tough times or celebrating victories, I always strive to be a dependable and supportive friend. No matter the situation, you can count on me to stand by your <span class="highlight"> side. </span> </p>
+        </div>
+    </div>
+</section>
+<!-- Clients Section -->
+ <section id="client" class="tab-content">
+        <div class="content">
+        <h2>My Connections</h2>
+        <div class="client-grid">
+            
+            <!-- FIC FAM -->
+            <div class="client-card">
+                <img src="https://assets.onecompiler.app/43bfefdcr/43bfyusmh/482843904_992041142344970_1916503864061656399_n.jpg" 
+                     alt="FIC FAM Church" class="client-img">
+                <div class="client-info">
+                    <h3>FIC FAM</h3>
+                    <p>FIC is more than just a church—it’s a family. It’s a home where faith grows, love thrives, and unity brings people together. Whether you're seeking guidance, support, or a place to belong, FIC welcomes you with open arms. Here, we lift each other up, walk together in faith, and create lasting connections.</p>
+                </div>
+            </div>
+
+            <!-- Kuya Tian -->
+            <div class="client-card">
+                <img src="https://assets.onecompiler.app/43bfefdcr/43bg9gty7/472772358_956479862746656_1585834857482533068_n.jpg" 
+                     alt="Kuya Tian" class="client-img">
+                <div class="client-info">
+                    <h3>Kuya Tian</h3>
+                    <p>More than just a mentor, Kuya Tian has been a guiding force in my life, embodying the qualities of a true leader, teacher, and father figure. His unwavering support and wisdom have profoundly shaped my journey, encouraging me to grow not only in faith but also in character, discipline, and leadership. Through his mentorship, I have learned the value of integrity, perseverance, and service to others. His influence extends beyond simple guidance—he challenges me to push beyond my limits, to seek wisdom in every experience, and to lead by example. Kuya Tian’s presence in my life is a constant reminder to uplift others, to stay committed to my faith, and to strive for excellence in everything I do.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .client-grid {
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .client-card {
+        display: flex;
+        background: linear-gradient(135deg, #a47c4d, #8b6f47);
+        color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        width: 80%;
+        max-width: 900px;
+    }
+
+    .client-img {
+        width: 40%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .client-info {
+        padding: 20px;
+        text-align: left;
+    }
+
+    .client-info h3 {
+        margin-top: 0;
+        font-size: 24px;
+    }
+
+    .client-info p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+        .client-card {
+            flex-direction: column;
+            width: 90%;
+        }
+
+        .client-img {
+            width: 100%;
+            height: 200px;
+        }
+    }
+</style>
+
+    <!-- Contact Section -->
+    <section id="contact" class="tab-content">
+        <div class="content">
+            <h2>Contact</h2>
+            <p>Want to chat or connect? Feel free to reach out! I'm always up for making new friends, sharing ideas, or just having a good conversation. Don’t be shy—I’d love to hear from you</p>
+            <p><strong>Email:</strong> <a href="mailto:cristiansoliman74@gmail.com">cristiansoliman74@gmail.com</a></p>
+            <p><strong>Phone:</strong> +639948654346</p>
+            <p><strong>Facebook:</strong> <a href="https://facebook.com/jheianne.sajol" target="_blank">Facebook Profile</a></p>
+        <p><strong>Follow me on Instagram:</strong> <a href="https://www.instagram.com/eihj_vibin" target="_blank">@eihj_vibin </a> </p>
+
+
+
+        </div>
+    </section>
+
+    <!-- JavaScript for Tab Navigation -->
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.tab-content').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
